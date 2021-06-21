@@ -83,7 +83,7 @@ The `proband.annovar.hg19_multianno.txt` file contains annotations for this exom
 
 ### 3. Results visualization
 
-Run `pwd Results_Visualization.R` to obtain the absolute location of `Results_Visualization.R` file and copy this path. Open `Results_Visualization.R` in Rstudio by clicking open file and then paste the path of to file name. 
+Run `pwd Results_Visualization.R` to obtain the path location of `Results_Visualization.R` file and copy this path. Open `Results_Visualization.R` in Rstudio by clicking open file and then paste the path of to file name. 
 
 <img src="https://user-images.githubusercontent.com/11565618/122840830-dee87300-d2c8-11eb-9796-997e00daa0b9.JPG">
 

@@ -90,7 +90,7 @@ Click session to setup the work directory to source file location.
 
 <img src="https://user-images.githubusercontent.com/11565618/122842022-8023f900-d2ca-11eb-92ff-aeee031a44d0.JPG">
 
-Then, run R commands in `Results_Visualization.R` to visualize variant frequency across chromesomes, frequency distribution between non-synonymous, synonymous and intronic variant, and allele frequency distribution across race.
+Then, run R code in `Results_Visualization.R` to visualize variant frequency across chromesomes, frequency distribution between non-synonymous, synonymous and intronic variant, and allele frequency distribution across race.
 
 ### 4. Run ANNOVAR to analyze a new strain of SARS-CoV-2
 

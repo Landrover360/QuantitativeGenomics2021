@@ -127,6 +127,9 @@ colnames(marray) <- names(result$results[[1]]);
 # View the results in 2-D array. The second column is the rank of genes.
 View (marray);
 ```
+![image](https://user-images.githubusercontent.com/16017780/122829197-b2c2f700-d2b4-11eb-9fe7-a4079bfe286d.png)
+
+
 
 ### Using the Phen2Gene Website to assess the ANKRD11 case
 

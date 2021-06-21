@@ -99,9 +99,36 @@ Then you can just run `perl table_annovar.pl example/ex3.avinput sarscov2db -bui
 Alternatively, since you are using only one single type of annotation (gene-based annotation), you may also do `perl annotate_variation.pl example/ex3.avinput sarscov2db/ -build NC_045512v2 -dbtype avGene -out ex3` to annotate these mutations. Examine the output file `ex3.exonic_variant_function` to see what proteins these mutations affect, and what amino acid changes that they cause.
 
 
-## Using the Phen2Gene Website to assess the ANKRD11 case
+## Phen2Gene: phenotype-based gene prioritization tool from HPO IDs or clinical notes on patients
 
 In the next exercise, we will use a software tool called Phen2Gene to prioritize genes based on clinical phenotypes of patients with Mendelian diseases.
+
+There are three ways to run Phen2Gene: download and run it locally (need more space), using API and using Phen2Gene website. Below, the last 2 ways of running Phen2Gene are showns.
+
+### Using Phen2Gene API.
+1. Go to Terminal, and run `curl -i -H "Accept: application/json" -H "Content-Type: application/json" "https://phen2gene.wglab.org/api?HPO_list=HP:0002459" | tail -n 1 > output.txt`
+where you generate JSON output in `output.txt`
+
+2. Go To Console, and run
+```
+# install JSON in R
+install.packages("rjson")
+
+# Load JSON in R
+library("rjson")
+
+# Read JSON results
+result <- fromJSON(file = "output.txt")
+
+# Convert them to array and name columns.
+marray <- t(array( unlist(result$results), dim=c(5, length(result$results)) ) );
+colnames(marray) <- names(result$results[[1]]);
+
+# View the results in 2-D array. The second column is the rank of genes.
+View (marray);
+```
+
+### Using the Phen2Gene Website to assess the ANKRD11 case
 
 Go to https://phen2gene.wglab.org.  Click on the tab `Patient notes`:
 

@@ -4,6 +4,12 @@ This repository contains the course materials for hands-on exercise of the "Vari
 # Preparation of computing environment
 Both the lectures and hands-on exercises will be taught via Zoom video conference online. To ensure the cross-platform compatibility, we will only use Rstudio Cloud to implement tools that are developed in Perl and Python.
 
+## 0. Sign up
+Students need to go to [RStudio Cloud](https://rstudio.cloud/) to create your own account before the lectures: click 'Sign up' on the top-right corner, and than select "Free" and click "Sign up" at the bottom-right corner. After you input your information, click "Sign up". For more detail, please find []().
+
+## 1. 
+
+
 # Basic Linux commands
 
 After login to Rstudio Cloud, you already have terminal access by clicking 'terminal' button and can run all basic Linux commands. If you are not familiar with basic Linux commands, you can follow one simple tutorial to learn several commands: https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners. Some of the  commands that we will use in the exercise include `ls`, `pwd`, `cd`, `mv` and `wget`.

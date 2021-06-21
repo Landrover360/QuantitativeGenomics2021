@@ -45,7 +45,6 @@ Next, you can just download the ZIP file for this class by the command `wget htt
 
 Type `cd exercise1` to enter the `exercise1` directory. The sub-folder `humandb` folder already contains several annotation databases for human genome that we will use in our exercise. (Note that users can find more annotation databases [here](https://doc-openbio.readthedocs.io/projects/annovar/en/latest/user-guide/download/#-for-filter-based-annotation). Run `chmod +x *.pl` to change all perl programs to executable files.
 
-
 ```
 perl table_annovar.pl example/ex2.vcf humandb/ -buildver hg19 -out myanno -remove -protocol refGeneWithVer,cytoBand,gnomad211_exome -operation g,r,f -nastring . -vcfinput -polish
 ```
@@ -89,9 +88,9 @@ Run `pwd Results_Visualization.R` to obtain the path location of `Results_Visual
 
 Click session to setup the work directory to source file location.
 
+<img src="https://user-images.githubusercontent.com/11565618/122842022-8023f900-d2ca-11eb-92ff-aeee031a44d0.JPG">
 
-
-run R commands in `Results_Visualization.R` to visualize variant frequency across chromesomes, frequency distribution between non-synonymous, synonymous and intronic variant, and allele frequency distribution across race.
+Then, run R commands in `Results_Visualization.R` to visualize variant frequency across chromesomes, frequency distribution between non-synonymous, synonymous and intronic variant, and allele frequency distribution across race.
 
 ### 4. Run ANNOVAR to analyze a new strain of SARS-CoV-2
 

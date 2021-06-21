@@ -6,7 +6,7 @@ Both the lectures and hands-on exercises will be taught via Zoom video conferenc
 
 # Basic Linux commands
 
-After login to Rstudio Cloud, you already have terminal access and can run all basic Linux commands. If you are not familiar with basic Linux commands, you can follow one simple tutorial to learn several commands: https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners. Some of the  commands that we will use in the exercise include `ls`, `pwd`, `cd`, `mv` and `wget`.
+After login to Rstudio Cloud, you already have terminal access by clicking 'terminal' button and can run all basic Linux commands. If you are not familiar with basic Linux commands, you can follow one simple tutorial to learn several commands: https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners. Some of the  commands that we will use in the exercise include `ls`, `pwd`, `cd`, `mv` and `wget`.
 
 # Installation of software tools and data sets
 

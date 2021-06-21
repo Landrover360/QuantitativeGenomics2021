@@ -5,10 +5,27 @@ This repository contains the course materials for hands-on exercise of the "Vari
 Both the lectures and hands-on exercises will be taught via Zoom video conference online. To ensure the cross-platform compatibility, we will only use Rstudio Cloud to implement tools that are developed in Perl and Python.
 
 ## 0. Sign up
-Students need to go to [RStudio Cloud](https://rstudio.cloud/) to create your own account before the lectures: click 'Sign up' on the top-right corner, and than select "Free" and click "Sign up" at the bottom-right corner. After you input your information, click "Sign up". For more detail, please find []().
+Students need to go to [RStudio Cloud](https://rstudio.cloud/) to create your own account before the lectures: 
+1. click 'Sign up' on the top-right corner
+<img src="https://user-images.githubusercontent.com/16017780/122824588-de42e300-d2ae-11eb-8999-3775f83568ef.png" width="400" height="200">
 
-## 1. 
+2. select "Free" and click "Sign up" at the bottom-right corner. 
+<img src="https://user-images.githubusercontent.com/16017780/122824608-e8fd7800-d2ae-11eb-9f14-b1ded8d1e03a.png" width="400" height="200">
 
+3. After you input your information, click "Sign up". 
+<img src="https://user-images.githubusercontent.com/16017780/122824633-f0248600-d2ae-11eb-9bd1-a72b8f03383b.png" width="200" height="300">
+
+## 1. Be familiar with RStudio
+If you logout after signing up, you can go to [RStudio Cloud](https://rstudio.cloud/) and login with your username and password. After you are added to "QuantitativeGenomics2021", you can go to "QuantitativeGenomics" spaces on the left, and then click "New project" to create your projects for practice as shown below. It will take ~1 minute to deploy and prepare the project for you. 
+![image](https://user-images.githubusercontent.com/16017780/122825757-58279c00-d2b0-11eb-840a-461f8699e1d9.png)
+
+By default, you will be in "Console" as shown below where you can run R code.
+![image](https://user-images.githubusercontent.com/16017780/122825824-6e355c80-d2b0-11eb-8f8e-14af92192188.png)
+
+You can also click "Terminal" so that you can run linux commands.
+![image](https://user-images.githubusercontent.com/16017780/122826165-cec49980-d2b0-11eb-9076-5461b0cd4ee2.png)
+
+During the exercise, you can feel free to swith to Terminal when you need to run linux commands and to Console when you need to run R code.
 
 # Basic Linux commands
 

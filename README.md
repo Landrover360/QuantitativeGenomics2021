@@ -142,8 +142,7 @@ barplot(table[chrlist], ylab="Number of Variant", las=2)
 
 At this point, you should see a barplot similar to the one below:
 
-![image](https://user-images.githubusercontent.com/5926328/122942716-67f0c000-d344-11eb-99d9-7c9deb488564.png)
-
+![image](https://user-images.githubusercontent.com/11565618/123002115-87590e80-d37f-11eb-8b90-bf2901e3a8c8.png)
 
 Check allele frequency distribution between non-synonymous, synonymous and intronic variants:
 ```{r}
@@ -161,7 +160,8 @@ hist(as.numeric(af_intron), ylab="Frequency", xlab="Allele frequency", main="Int
 
 You should see a figure similar to the one below:
 
-![image](https://user-images.githubusercontent.com/5926328/122943807-552abb00-d345-11eb-966d-7bbc97546997.png)
+![image](https://user-images.githubusercontent.com/11565618/123002219-a9eb2780-d37f-11eb-9452-01cf20f5eedc.png)
+
 
 
 Check allele frequency distribution across race:
@@ -179,7 +179,7 @@ barplot(res_sub, ylab="Allele frequency", main=variantname, las=2)
 
 You should see a figure similar to the one below:
 
-![image](https://user-images.githubusercontent.com/5926328/122944123-902cee80-d345-11eb-9187-461d9e93f127.png)
+![image](https://user-images.githubusercontent.com/11565618/123002260-ba030700-d37f-11eb-811b-54eb98fb0c73.png)
 
 
 ### 5. Run ANNOVAR to analyze a new strain of SARS-CoV-2

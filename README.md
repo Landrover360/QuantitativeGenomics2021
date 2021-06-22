@@ -146,7 +146,7 @@ chrlist <- c(chrlist, "chrX")
 barplot(table[chrlist], ylab="Variant frequency", las=2)
 ````
 
-At this point, you should see a barplot like the one below:
+At this point, you should see a barplot similar to the one below:
 
 ![image](https://user-images.githubusercontent.com/5926328/122942716-67f0c000-d344-11eb-99d9-7c9deb488564.png)
 
@@ -164,6 +164,11 @@ hist(as.numeric(af_nonsyn), na.rm=T, ylab="Frequency", xlab="Allele frequency", 
 af_intron<-res[res$Func.refGeneWithVer =="intronic",]$AF
 hist(as.numeric(af_intron), na.rm=T, ylab="Frequency", xlab="Allele frequency", main="Intronic")
 ```
+
+You should see a figure similar to the one below:
+
+![image](https://user-images.githubusercontent.com/5926328/122943807-552abb00-d345-11eb-966d-7bbc97546997.png)
+
 
 Check allele frequency distribution across race:
 ```{r}

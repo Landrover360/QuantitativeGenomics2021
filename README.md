@@ -146,6 +146,11 @@ chrlist <- c(chrlist, "chrX")
 barplot(table[chrlist], ylab="Variant frequency", las=2)
 ````
 
+At this point, you should see a barplot like the one below:
+
+![image](https://user-images.githubusercontent.com/5926328/122942716-67f0c000-d344-11eb-99d9-7c9deb488564.png)
+
+
 Check allele frequency distribution between non-synonymous, synonymous and intronic variants:
 ```{r}
 #visualize allele frequency

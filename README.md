@@ -156,7 +156,16 @@ Alternatively, since you are using only one single type of annotation (gene-base
 
 In the next exercise, we will use a software tool called Phen2Gene to prioritize genes based on clinical phenotypes of patients with Mendelian diseases.
 
-There are three ways to run Phen2Gene: download and run it locally (need more space), using API and using Phen2Gene website. Below, the last 2 ways of running Phen2Gene are showns.
+There are three ways to run Phen2Gene: download and run it locally (need a few GB of space), using API and using Phen2Gene website. Today, we will perform the latter 2 ways of running Phen2Gene.
+
+The benefit of running Phen2Gene is if you do not have any idea of a candidate gene for your disease, you can use it in one of three scenarios:
+
+1. Ideally, you have a list of physician-curated HPO terms describing a patient phenotype and a list of potential candidate disease variants that overlap gene space and you want to narrow down the list of variants by prioritizing candidate disease genes, often in tandem with variant prioritization software, which cannot as of yet score STR expansions or SVs unlike Phen2Gene which is variant agnostic.
+2. You do not have variants, but you have HPO terms and would like to get some candidate genes for your disease that you may want to target sequence, as it is much cheaper than whole-genome or whole-exome sequencing.
+3. If you have clinical notes, you can use tools like EHR-Phenolyzer or Doc2HPO for processing clinical notes into HPO terms using natural language processing (NLP) techniques, then apply scenario 1 or 2 as relevant.
+
+Other tools listed below (ClinPhen, AMELIE, GADO) require a gene list, and Phen2Gene does not require any variant data or prior gene lists to provide high quality candidate genes.  One would most likely use Phen2Gene for obtaining the genetic etiology of an undiagnosed rare disease with no obvious genetic cause.
+
 
 ### Using Phen2Gene API.
 1. Go to Terminal, and run `curl -i -H "Accept: application/json" -H "Content-Type: application/json" "https://phen2gene.wglab.org/api?HPO_list=HP:0002459" | tail -n 1 > output.txt`
@@ -286,6 +295,15 @@ and more accurate:
 
 ![image](https://user-images.githubusercontent.com/6568964/122856907-a1dea980-d2e5-11eb-96a9-d11990d75aeb.png)
 
+Both these tools have web servers that are somewhat awkward to use and really slow.  It is better to use our faster webserver or API, or install locally. We also do not require a list of random genes to run our tool either.  Having a command line tool for Phen2Gene makes it easier to deploy in any clinical setting as well.
+
 ### Running PhenCards
 
 Click [this link](PhenCards.md) to learn how you can use PhenCards.
+
+#### CITATIONS:
+
+[Phen2Gene](https://academic.oup.com/nargab/article/2/2/lqaa032/5843800): Zhao, M. et al. Phen2Gene: rapid phenotype-driven gene prioritization for rare diseases. NAR Genom Bioinform 2, lqaa032 (2020).
+[AMELIE](https://stm.sciencemag.org/content/12/544/eaau9113.abstract): Birgmeier, J. et al. AMELIE speeds Mendelian diagnosis by matching patient phenotype and genotype to primary literature. Sci. Transl. Med. 12, (2020).
+[GADO](https://www.nature.com/articles/s41467-019-10649-4): Deelen, P. et al. Improving the diagnostic yield of exome- sequencing by predicting gene-phenotype associations using large-scale gene expression analysis. Nat. Commun. 10, 2837 (2019).
+[ClinPhen](https://www.nature.com/articles/s41436-018-0381-1): Deisseroth, C. A. et al. ClinPhen extracts and prioritizes patient phenotypes directly from medical records to expedite genetic disease diagnosis. Genet. Med. 21, 1585–1593 (2019).

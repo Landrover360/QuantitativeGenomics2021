@@ -136,10 +136,10 @@ res <- read.table("proband.annovar.hg19_multianno.txt", fill=T, header=T, sep="\
 #visualize variant frequency
 attach(mtcars)
 par(mar=c(5.1, 4.1, 4.1, 2.1),mfrow=c(1,1))
-table <- prop.table(table(res$Chr))
+table <- table(res$Chr)
 chrlist <- paste0("chr",1:22)
 chrlist <- c(chrlist, "chrX")
-barplot(table[chrlist], ylab="Variant frequency", las=2)
+barplot(table[chrlist], ylab="Number of Variant", las=2)
 ````
 
 At this point, you should see a barplot similar to the one below:
@@ -152,13 +152,13 @@ Check allele frequency distribution between non-synonymous, synonymous and intro
 #visualize allele frequency
 par(mar=c(5.1, 4.1, 4.1, 2.1),mfrow=c(3,1))
 af_syn<-res[res$ExonicFunc.refGeneWithVer=="synonymous SNV",]$AF
-hist(as.numeric(af_syn), na.rm=T, ylab="Frequency", xlab="Allele frequency", main="Synonymous SNV")
+hist(as.numeric(af_syn),  ylab="Frequency", xlab="Allele frequency", main="Synonymous SNV", breaks=seq(0,1,.001))
 
 af_nonsyn<-res[res$ExonicFunc.refGeneWithVer=="nonsynonymous SNV",]$AF
-hist(as.numeric(af_nonsyn), na.rm=T, ylab="Frequency", xlab="Allele frequency", main="nonSynonymous SNV")
+hist(as.numeric(af_nonsyn), ylab="Frequency", xlab="Allele frequency", main="nonSynonymous SNV",breaks=seq(0,1,.001))
 
 af_intron<-res[res$Func.refGeneWithVer =="intronic",]$AF
-hist(as.numeric(af_intron), na.rm=T, ylab="Frequency", xlab="Allele frequency", main="Intronic")
+hist(as.numeric(af_intron), ylab="Frequency", xlab="Allele frequency", main="Intronic", breaks=seq(0,1,.001))
 ```
 
 You should see a figure similar to the one below:

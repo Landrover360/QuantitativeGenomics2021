@@ -270,6 +270,7 @@ After the wheel is done spinning your results should look like the following:
 
 ![image](https://user-images.githubusercontent.com/6568964/122857763-051d0b80-d2e7-11eb-8e14-2941636be222.png)
 
+The number 1 gene, TAF1 is the correct causal gene.  But Phen2Gene gets the same result.
 
 ### Phen2Gene vs AMELIE and GADO
 

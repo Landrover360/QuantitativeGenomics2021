@@ -216,7 +216,18 @@ Alternatively, since you are using only one single type of annotation (gene-base
 
 In the next exercise, we will use a software tool called Phen2Gene to prioritize genes based on clinical phenotypes of patients with Mendelian diseases.
 
-There are three ways to run Phen2Gene: download and run it locally (need a few GB of space), using API and using Phen2Gene website. Today, we will perform the latter 2 ways of running Phen2Gene.
+We will do the exercise in a directory called `exercise2`. So first use `cd ..` to go to the upper directory, then create this new directory, then go into this directory.
+
+```
+/cloud/project/genomics_exercise/exercise1$ cd ..
+/cloud/project/genomics_exercise$ ls
+exercise1  exercise1.tar.gz
+/cloud/project/genomics_exercise$ mkdir exercise2
+/cloud/project/genomics_exercise$ cd exercise2/
+/cloud/project/genomics_exercise/exercise2$ 
+```
+
+There are three ways to run Phen2Gene: download and run it locally (need a few GB of space), using API and using Phen2Gene website. Today, we will perform the latter 2 ways of running Phen2Gene. Of course, if you are interested downloading Phen2Gene and run it locally in a different computer server, you can follow instructions here: https://github.com/WGLab/Phen2Gene.
 
 The benefit of running Phen2Gene is if you do not have any idea of a candidate gene for your disease, you can use it in one of three scenarios:
 

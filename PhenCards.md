@@ -58,9 +58,9 @@ Scroll down the Orphanet page and click on the "Genes" section:
 
 Now we found further evidence FGD1 is the causal gene.
 
-##### So what did we learn?
+### So what did we learn?
 
-With just clinical free text, PhenCards gives us several pieces of evidence to look through, candidate genes ranked by Phen2Gene, a candidate disease if not already known, and databases to look through to support a potential genetic etiology.  Furthermore, one can click on any of the term symptoms and search a wealth of information about them on PhenCards using its "Phenotype search" tab which is its primary function:
+With just clinical free text or patient notes on an unidentified disease, PhenCards gives us several pieces of evidence to look through, candidate genes ranked by Phen2Gene, a candidate disease if not already known, and databases to look through to support a potential genetic etiology.  Furthermore, one can click on any of the term symptoms and search a wealth of information about them on PhenCards using its "Phenotype search" tab which is its primary function:
 
 ![image](https://user-images.githubusercontent.com/6568964/122877196-58ea1d80-d304-11eb-8ad1-0a4ad8b24925.png)
 

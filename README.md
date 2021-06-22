@@ -37,7 +37,14 @@ After login to Rstudio Cloud, you already have terminal access by clicking 'term
 
 ### 1. Install ANNOVAR
 
-Typically you will go to the [ANNOVAR website](http://annovar.openbioinformatics.org), fill in a registration form, and download the package there. For this exercise, we already prepared a ZIP file that contains a "compact" version of ANNOVAR and necessary library files, to make it easier for users. To make it easier to manage files and directories, you can create a new directory, then enter this new directory (type `mkdir genomics_exercise` followed by `cd genomics_exercise`). To confirm which directory you are in, you can type `pwd`.
+Typically you will go to the [ANNOVAR website](http://annovar.openbioinformatics.org), fill in a registration form, and download the package there. For this exercise, we already prepared a ZIP file that contains a "compact" version of ANNOVAR and necessary library files, to make it easier for users. To make it easier to manage files and directories, you can create a new directory, then enter this new directory (type `mkdir genomics_exercise` followed by `cd genomics_exercise`). To confirm which directory you are in, you can type `pwd`. You will see the example below.
+
+```
+/cloud/project$ mkdir genomics_exercise
+/cloud/project$ cd genomics_exercise/
+/cloud/project/genomics_exercise$ pwd
+/cloud/project/genomics_exercise
+```
 
 Next, you can just download the ZIP file for this class by the command `wget https://github.com/WGLab/Workshop_Annotation/releases/download/v1.0.1/exercise1.tar.gz`. The Linux command `wget` essentially downloads a file from a given URL and saves the file to your computer. Because this file contains several annotation databases, its size is around 500Mb and it may take a while to download it. To unzip the file, you can dirctly using `tar -xvf exercise1.tar.gz` to unzip the downladed file. You will see from the messages in screen that several files are extracted from the zip file.
 

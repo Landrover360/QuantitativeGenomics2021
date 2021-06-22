@@ -118,8 +118,6 @@ Paste this path to R console or R studio interface to setup the working director
 > setwd("/cloud/project/genomics_exercise/exercise1")
 ```
 
-Then, run R code in `Results_Visualization.R` to visualize the results.
-
 Check variant distribution across chromesomes:
 ```{r}
 #load data

@@ -42,7 +42,7 @@ Typically you will go to the [ANNOVAR website](http://annovar.openbioinformatics
 /cloud/project/genomics_exercise
 ```
 
-Next, you can just download the ZIP file for this class by the command `wget https://github.com/WGLab/QuantitativeGenomics2021/releases/download/v1.0.0/exercise.tar.gz`. The Linux command `wget` essentially downloads a file from a given URL and saves the file to your computer. Because this file contains several annotation databases, its size is around 500Mb and it may take a while to download it. To unzip the file, you can dirctly using `tar -xvf exercise1.tar.gz` to unzip the downladed file. You will see from the messages in screen that several files are extracted from the zip file.
+Next, you can just download the ZIP file for this class by the command `wget https://github.com/WGLab/QuantitativeGenomics2021/releases/download/v1.0.0/exercise1.tar.gz`. The Linux command `wget` essentially downloads a file from a given URL and saves the file to your computer. Because this file contains several annotation databases, its size is around 500Mb and it may take a while to download it. To unzip the file, you can dirctly using `tar -xvf exercise1.tar.gz` to unzip the downladed file. You will see from the messages in screen that several files are extracted from the zip file.
 
 ```
 /cloud/project/genomics_exercise$ tar -xvf exercise1.tar.gz

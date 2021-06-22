@@ -239,10 +239,16 @@ Other tools listed below (ClinPhen, AMELIE, GADO) require a gene list, and Phen2
 
 
 ### Using Phen2Gene API.
-1. Go to Terminal, and run `curl -i -H "Accept: application/json" -H "Content-Type: application/json" "https://phen2gene.wglab.org/api?HPO_list=HP:0002459" | tail -n 1 > output.txt`
+1. Go to Terminal, make sure you are in the `exercicse2` directory first, and run `curl -i -H "Accept: application/json" -H "Content-Type: application/json" "https://phen2gene.wglab.org/api?HPO_list=HP:0002459" | tail -n 1 > output.txt`
 where you generate JSON output in `output.txt`
 
-2. Go To Console, and run
+2. Go To Console, remember that we should first set `exercise2` as the working directory.
+
+```
+setwd("../exercise2")
+```
+
+3. and we can run
 ```
 # install JSON in R
 install.packages("rjson")
@@ -262,7 +268,7 @@ View (marray);
 ```
 ![image](https://user-images.githubusercontent.com/16017780/122829197-b2c2f700-d2b4-11eb-9fe7-a4079bfe286d.png)
 
-
+You can see that the top ranked genes are ALK, ATP7A, TTR, etc.
 
 ### Using the Phen2Gene Website to assess the ANKRD11 case
 

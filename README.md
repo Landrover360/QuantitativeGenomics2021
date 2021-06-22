@@ -373,7 +373,7 @@ After the wheel is done spinning your results should look like the following:
 
 The number 1 gene, TAF1 is the correct causal gene.  But Phen2Gene gets the same result.
 
-### Phen2Gene vs AMELIE and GADO
+### Summary of the phenotype analysis exercises
 
 In summary, a number of computational tools such as Phen2Gene, AMELIE and GADO can perform phenotype-driven gene prioritization. Phen2Gene provides webserver or API, or you can install and run locally (which is important to deploy it in batch processing mode), and it does not require a list of random genes to run either.
 

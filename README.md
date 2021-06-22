@@ -242,3 +242,49 @@ clinphen m_notes.txt
 ```
 You will get the results from ClinPhen. You can also type `clinphen --help` if you are interested in more options.
 
+### Run AMELIE
+
+[AMELIE](https://amelie.stanford.edu/) is yet another tool for analyzing clinical notes, however it requires a candidate gene list.  We put the real causal gene in a algorithm-allowed maximum 1000 gene list of random exome capture genes.
+
+First copy [this list of HPO terms](https://raw.githubusercontent.com/WGLab/Phen2Gene/master/example/HPO_sample.txt) to your clipboard. Then go to the [AMELIE website](https://amelie.stanford.edu/) and click "Submit Case."
+
+![image](https://user-images.githubusercontent.com/6568964/122857269-3812cf80-d2e6-11eb-9649-4a30f0d8d94d.png)
+
+Now, paste the HPO term list into "Case phenotypes."
+
+![image](https://user-images.githubusercontent.com/6568964/122857504-93dd5880-d2e6-11eb-94b8-d4ce749df014.png)
+
+Then, copy [this list of genes](https://raw.githubusercontent.com/WGLab/Phen2Gene/master/example/1000genetest.txt) to your clipboard.  
+
+Next, paste the gene list into "Case genotype" under the tab "Gene List" then click Submit.
+
+![image](https://user-images.githubusercontent.com/6568964/122857542-a2c40b00-d2e6-11eb-82ca-ac10ea712772.png)
+
+You'll get a screen that looks like this:
+
+![image](https://user-images.githubusercontent.com/6568964/122857711-ea4a9700-d2e6-11eb-8c03-761257d6ff8b.png)
+
+And a wheel that tells you to wait a _while_.
+
+After the wheel is done spinning your results should look like the following:
+
+![image](https://user-images.githubusercontent.com/6568964/122857763-051d0b80-d2e7-11eb-8e14-2941636be222.png)
+
+
+### Phen2Gene vs AMELIE and GADO
+
+In all honesty though, we recommend Phen2Gene because it is faster:
+
+| Tool              | Phen2Gene (API) | Phen2Gene (CLI) | Phenolyzer (ver. 0.2.0, CLI) | AMELIE 2 (API) | GADO (API) | GADO (CLI) |
+|-------------------|-----------------|-----------------|------------------------------|----------------|------------|------------|
+| Median time (s)   | 0.94            | 0.96            | 504.54                       | 519.97         | 1.52       | 5.89       |
+| Minimum time (s)  | 0.17            | 0.51            | 187.97                       | 198.35         | 0.74       | 3.43       |
+| Maximum time (s)  | 2.96            | 1.92            | 1021.54                      | 852.70         | 4.15       | 10.3       |
+
+and more accurate:
+
+![image](https://user-images.githubusercontent.com/6568964/122856907-a1dea980-d2e5-11eb-96a9-d11990d75aeb.png)
+
+### Running PhenCards
+
+Click [this link](PhenCards.md) to learn how you can use PhenCards.

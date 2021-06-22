@@ -212,9 +212,9 @@ You can use the Linux command `cat` to show the content of this file, since it i
 Alternatively, since you are using only one single type of annotation (gene-based annotation), you may also do `perl annotate_variation.pl example/ex3.avinput sarscov2db/ -build NC_045512v2 -dbtype avGene -out ex3` to annotate these mutations. Examine the output file `ex3.exonic_variant_function` to see what proteins these mutations affect, and what amino acid changes that they cause.
 
 
-## Phen2Gene: phenotype-based gene prioritization tool from HPO IDs or clinical notes on patients
+## Phenotype-driven prioritization of human disease genes (Phen2Gene, ClinPhen, AMELIE, etc)
 
-In the next exercise, we will use a software tool called Phen2Gene to prioritize genes based on clinical phenotypes of patients with Mendelian diseases.
+Phen2Gene is a phenotype-based gene prioritization tool from HPO IDs or clinical notes on patients. In the next exercise, we will first use Phen2Gene to prioritize genes based on clinical phenotypes of patients with Mendelian diseases.
 
 We will do the exercise in a directory called `exercise2`. So first use `cd ..` to go to the upper directory, then create this new directory, then go into this directory.
 
@@ -326,6 +326,21 @@ After that, press "ESC", and then shift+":wq" to exit the vi editor.
 ```
 clinphen m_notes.txt
 ```
+
+The expected results are below:
+
+```
+/cloud/project/genomics_exercise/exercise2$ clinphen m_notes.txt
+HPO ID  Phenotype name  No. occurrences Earliness (lower = earlier)     Example sentence
+HP:0012471      Thick vermilion border  2       12      unlike most kbg patients the proband has full lips 
+HP:0000574      Thick eyebrow   1       9       features of proband s face can be seen including bushy eyebrows broad nasal tip short philtrum full lips and cupid bow of upper lip 
+HP:0000455      Broad nasal tip 1       10      features of proband s face can be seen including bushy eyebrows broad nasal tip short philtrum full lips and cupid bow of upper lip 
+HP:0000322      Short philtrum  1       11      features of proband s face can be seen including bushy eyebrows broad nasal tip short philtrum full lips and cupid bow of upper lip 
+HP:0002263      Exaggerated cupid's bow 1       13      features of proband s face can be seen including bushy eyebrows broad nasal tip short philtrum full lips and cupid bow of upper lip 
+HP:0001250      Seizures        1       32      the frequency of seizures increased after the proband fell and fractured his jaw 
+HP:0030084      Clinodactyly    1       42      like most kbg patients the proband has curved pinkies diagnosed as clinodactyly which are often found in kbg patients 
+```
+
 You will get the results from ClinPhen. You can also type `clinphen --help` if you are interested in more options.
 
 ### Run AMELIE

@@ -1,8 +1,7 @@
-## Please Cite
+# What is PhenCards?
 
-If you use [PhenCards](https://phencards.org) in your research, please cite the paper.
+PhenCards (https://phencards.org) is a database and web server intended as a one-stop shop for previously disconnected biomedical knowledge related to human clinical phenotypes. Users can query human phenotype terms or clinical notes. PhenCards obtains relevant disease/phenotype prevalence and co-occurrence, drug, procedural, pathway, literature, grant, and collaborator data. PhenCards recommends the most probable genetic diseases and candidate genes based on phenotype terms from clinical notes. PhenCards facilitates exploration of phenotype, e.g., which drugs cause or are prescribed for patient symptoms, which genes likely cause specific symptoms, and which comorbidities co-occur with phenotypes.
 
-[PhenCards](https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-021-00909-8): Havrilla, J. M., Liu, C., Dong, X., Weng, C. & Wang, K. PhenCards: a data resource linking human phenotype information to biomedical knowledge. Genome Med. 13, 91 (2021).
 
 # Trying to use PhenCards? Why not watch the video?
 
@@ -69,6 +68,7 @@ You will get a wealth of data including candidate genes for that term, drugs tha
 ![image](https://user-images.githubusercontent.com/6568964/122877430-98186e80-d304-11eb-8e83-5e48e8dd6d82.png)
 
 If you wish to know more about it, watch the [video](https://www.youtube.com/watch?v=9FT4pFgeA08&ab_channel=JimHavrilla).
+
 #### CITATIONS:
 
 [PhenCards](https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-021-00909-8): Havrilla, J. M., Liu, C., Dong, X., Weng, C. & Wang, K. PhenCards: a data resource linking human phenotype information to biomedical knowledge. Genome Med. 13, 91 (2021).

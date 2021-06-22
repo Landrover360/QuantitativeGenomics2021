@@ -204,6 +204,11 @@ This format is referred to as the avinput format, and it is a simple tab or spac
 
 Then you can just run `perl table_annovar.pl example/ex3.avinput sarscov2db -build NC_045512v2 -protocol avGene -operation g -out ex3` to annotate these mutations and the results will be stored in ex3.NC_045512v2_multianno.txt. 
 
+You can use the Linux command `cat` to show the content of this file, since it is a relatively small file.
+
+![image](https://user-images.githubusercontent.com/5926328/122944485-dd10c500-d345-11eb-8cce-4a96dbb61eb3.png)
+
+
 Alternatively, since you are using only one single type of annotation (gene-based annotation), you may also do `perl annotate_variation.pl example/ex3.avinput sarscov2db/ -build NC_045512v2 -dbtype avGene -out ex3` to annotate these mutations. Examine the output file `ex3.exonic_variant_function` to see what proteins these mutations affect, and what amino acid changes that they cause.
 
 

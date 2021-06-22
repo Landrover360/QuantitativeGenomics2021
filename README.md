@@ -379,7 +379,8 @@ Click [this link](PhenCards.md) to learn how you can use PhenCards.
 
 # CITATIONS:
 
-[Phen2Gene](https://academic.oup.com/nargab/article/2/2/lqaa032/5843800): Zhao, M. et al. Phen2Gene: rapid phenotype-driven gene prioritization for rare diseases. NAR Genom Bioinform 2, lqaa032 (2020).
-[AMELIE](https://stm.sciencemag.org/content/12/544/eaau9113.abstract): Birgmeier, J. et al. AMELIE speeds Mendelian diagnosis by matching patient phenotype and genotype to primary literature. Sci. Transl. Med. 12, (2020).
-[GADO](https://www.nature.com/articles/s41467-019-10649-4): Deelen, P. et al. Improving the diagnostic yield of exome- sequencing by predicting gene-phenotype associations using large-scale gene expression analysis. Nat. Commun. 10, 2837 (2019).
-[ClinPhen](https://www.nature.com/articles/s41436-018-0381-1): Deisseroth, C. A. et al. ClinPhen extracts and prioritizes patient phenotypes directly from medical records to expedite genetic disease diagnosis. Genet. Med. 21, 1585–1593 (2019).
+- [ANNOVAR](https://academic.oup.com/nar/article/38/16/e164/1749458): Wang K, Li M, Hakonarson H. ANNOVAR: Functional annotation of genetic variants from next-generation sequencing data. Nucleic Acids Research, 38:e164, 2010
+- [Phen2Gene](https://academic.oup.com/nargab/article/2/2/lqaa032/5843800): Zhao, M. et al. Phen2Gene: rapid phenotype-driven gene prioritization for rare diseases. NAR Genom Bioinform, 2:lqaa032 (2020).
+- [AMELIE](https://stm.sciencemag.org/content/12/544/eaau9113.abstract): Birgmeier, J. et al. AMELIE speeds Mendelian diagnosis by matching patient phenotype and genotype to primary literature. Sci. Transl. Med. 12:eaau9113, (2020).
+- [GADO](https://www.nature.com/articles/s41467-019-10649-4): Deelen, P. et al. Improving the diagnostic yield of exome- sequencing by predicting gene-phenotype associations using large-scale gene expression analysis. Nat. Commun. 10:2837 (2019).
+- [ClinPhen](https://www.nature.com/articles/s41436-018-0381-1): Deisseroth, C. A. et al. ClinPhen extracts and prioritizes patient phenotypes directly from medical records to expedite genetic disease diagnosis. Genet. Med. 21:1585–1593 (2019).

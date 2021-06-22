@@ -204,8 +204,51 @@ You can use the Linux command `cat` to show the content of this file, since it i
 
 ![image](https://user-images.githubusercontent.com/5926328/122944485-dd10c500-d345-11eb-8cce-4a96dbb61eb3.png)
 
+Additional exercise: The [B.1.167.2](https://en.wikipedia.org/wiki/SARS-CoV-2_Delta_variant) variant (The WHO named it the Delta variant on 31 May 2021) is a variant of concern, because it showed evidence of higher transmissibility and reduced neutralisation. The variant is thought to be partly responsible for India's second wave of the pandemic beginning in February 2021. As of June 22, 2021, the distribution of delta variant from GISAID is shown below.
 
-Alternatively, since you are using only one single type of annotation (gene-based annotation), you may also do `perl annotate_variation.pl example/ex3.avinput sarscov2db/ -build NC_045512v2 -dbtype avGene -out ex3` to annotate these mutations. Examine the output file `ex3.exonic_variant_function` to see what proteins these mutations affect, and what amino acid changes that they cause.
+![image](https://user-images.githubusercontent.com/5926328/122996121-7953bf80-d378-11eb-9196-deb89f19f466.png)
+
+The first sequence on B.1.167.2 was sequenced on 3/23/2021 from Australia (identifier "NSW-R0167/2021|EPI_ISL_1315070|2021-03-18"). We analyzed this sequence and identified a total of 34 mutations listed below. Now please use the procedure learned above, annotate these mutations to see how they affect proteins in SARS-CoV-2.
+
+One thing that becomes immediately clear from your analysis is that B.1.167.2 contains the famous L452R mutation and the [D614G mutation](https://www.nature.com/articles/s41586-020-2895-3). However, it does NOT contain the E484Q mutation. Therefore, the statements made in Wikipedia page is wrong as of June 22, 2021 ("The Delta variant has mutations in the gene encoding the SARS-CoV-2 spike protein[5] causing the substitutions E484Q and L452R.[7]".
+
+```
+NC_045512v2  210 210 G   T   1
+NC_045512v2  241 241 C   T   1
+NC_045512v2  1191    1191    C   T   1
+NC_045512v2  1267    1267    C   T   1
+NC_045512v2  1825    1825    C   T   1
+NC_045512v2  3037    3037    C   T   1
+NC_045512v2  5184    5184    C   T   1
+NC_045512v2  9203    9203    G   A   1
+NC_045512v2  9678    9678    T   C   1
+NC_045512v2  11005   11005   C   A   1
+NC_045512v2  14408   14408   C   T   1
+NC_045512v2  17496   17496   A   G   1
+NC_045512v2  20396   20396   A   G   1
+NC_045512v2  21618   21618   C   G   1
+NC_045512v2  21792   21792   A   C   1
+NC_045512v2  21987   21987   G   A   1
+NC_045512v2  22029   22035   GAGTTCA G   1
+NC_045512v2  22917   22917   T   G   1
+NC_045512v2  22995   22995   C   A   1
+NC_045512v2  23403   23403   A   G   1
+NC_045512v2  23604   23604   C   G   1
+NC_045512v2  24410   24410   G   A   1
+NC_045512v2  25469   25469   C   T   1
+NC_045512v2  26767   26767   T   C   1
+NC_045512v2  27638   27638   T   C   1
+NC_045512v2  27752   27752   C   T   1
+NC_045512v2  28040   28040   A   G   1
+NC_045512v2  28253   28253   C   T   1
+NC_045512v2  28271   28272   TA  T   1
+NC_045512v2  28461   28461   A   G   1
+NC_045512v2  28881   28881   G   T   1
+NC_045512v2  29402   29402   G   T   1
+NC_045512v2  29742   29742   G   T   1
+```
+
+
 
 
 # Phenotype-driven prioritization of human disease genes (Phen2Gene, ClinPhen, AMELIE, etc)

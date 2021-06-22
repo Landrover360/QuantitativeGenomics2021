@@ -124,6 +124,12 @@ Click session to setup the work directory to source file location.
 
 <img src="https://user-images.githubusercontent.com/11565618/122842022-8023f900-d2ca-11eb-92ff-aeee031a44d0.JPG">
 
+You will see that RStudio automatically execute the command below to set up the working directory.
+
+```
+> setwd("/cloud/project/genomics_exercise/exercise1")
+```
+
 Then, run R code in `Results_Visualization.R` to visualize the results.
 
 Check variant distribution across chromesomes:

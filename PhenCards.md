@@ -71,6 +71,6 @@ If you wish to know more about it, watch the [video](https://www.youtube.com/wat
 
 #### CITATIONS:
 
-[PhenCards](https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-021-00909-8): Havrilla, J. M., Liu, C., Dong, X., Weng, C. & Wang, K. PhenCards: a data resource linking human phenotype information to biomedical knowledge. Genome Med. 13, 91 (2021).
-[Doc2Hpo](https://academic.oup.com/nar/article/47/W1/W566/5491745): Liu, C. et al. Doc2Hpo: a web application for efficient and accurate HPO concept curation. Nucleic Acids Res. 47, W566–W570 (2019).
-[Phen2Gene](https://academic.oup.com/nargab/article/2/2/lqaa032/5843800): Zhao, M. et al. Phen2Gene: rapid phenotype-driven gene prioritization for rare diseases. NAR Genom Bioinform 2, lqaa032 (2020).
+- [PhenCards](https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-021-00909-8): Havrilla, J. M., Liu, C., Dong, X., Weng, C. & Wang, K. PhenCards: a data resource linking human phenotype information to biomedical knowledge. Genome Med. 13, 91 (2021).
+- [Doc2Hpo](https://academic.oup.com/nar/article/47/W1/W566/5491745): Liu, C. et al. Doc2Hpo: a web application for efficient and accurate HPO concept curation. Nucleic Acids Res. 47, W566–W570 (2019).
+- [Phen2Gene](https://academic.oup.com/nargab/article/2/2/lqaa032/5843800): Zhao, M. et al. Phen2Gene: rapid phenotype-driven gene prioritization for rare diseases. NAR Genom Bioinform 2, lqaa032 (2020).

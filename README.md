@@ -90,7 +90,48 @@ Click session to setup the work directory to source file location.
 
 <img src="https://user-images.githubusercontent.com/11565618/122842022-8023f900-d2ca-11eb-92ff-aeee031a44d0.JPG">
 
-Then, run R code in `Results_Visualization.R` to visualize variant frequency across chromesomes, frequency distribution between non-synonymous, synonymous and intronic variant, and allele frequency distribution across race.
+Then, run R code in `Results_Visualization.R` to visualize the results.
+
+Check variant distribution across chromesomes:
+```{r}
+#load data
+res <- read.table("proband.annovar.hg19_multianno.txt", fill=T, header=T, sep="\t")
+
+#visualize variant frequency
+attach(mtcars)
+par(mar=c(5.1, 4.1, 4.1, 2.1),mfrow=c(1,1))
+table <- prop.table(table(res$Chr))
+chrlist <- paste0("chr",1:22)
+chrlist <- c(chrlist, "chrX")
+barplot(table[chrlist], ylab="Variant frequency", las=2)
+````
+
+Check allele frequency distribution between non-synonymous, synonymous and intronic variants:
+```{r}
+#visualize allele frequency
+par(mar=c(5.1, 4.1, 4.1, 2.1),mfrow=c(3,1))
+af_syn<-res[res$ExonicFunc.refGeneWithVer=="synonymous SNV",]$AF
+hist(as.numeric(af_syn), na.rm=T, ylab="Frequency", xlab="Allele frequency", main="Synonymous SNV")
+
+af_nonsyn<-res[res$ExonicFunc.refGeneWithVer=="nonsynonymous SNV",]$AF
+hist(as.numeric(af_nonsyn), na.rm=T, ylab="Frequency", xlab="Allele frequency", main="nonSynonymous SNV")
+
+af_intron<-res[res$Func.refGeneWithVer =="intronic",]$AF
+hist(as.numeric(af_intron), na.rm=T, ylab="Frequency", xlab="Allele frequency", main="Intronic")
+```
+
+Check allele frequency distribution across race:
+```{r}
+#visualize allele frequency across race
+par(mar = c(12, 5, 2, 2),mfrow=c(1,1)) 
+res_sub <- res[res$Gene.refGeneWithVer=="NRXN2",]
+variantname <- res_sub$Otherinfo6[1]
+res_sub <- as.matrix(res_sub[1,16:23])
+colnames(res_sub) <- c("African/African-American", "South Asian", 
+                       "Latino/Admixed American", "East Asian", "Non-Finnish European", "Finnish",
+                       "Ashkenazi Jewish", "Other")
+barplot(res_sub, ylab="Allele frequency", main=variantname, las=2)
+```
 
 ### 4. Run ANNOVAR to analyze a new strain of SARS-CoV-2
 

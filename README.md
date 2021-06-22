@@ -375,19 +375,7 @@ The number 1 gene, TAF1 is the correct causal gene.  But Phen2Gene gets the same
 
 ### Phen2Gene vs AMELIE and GADO
 
-In all honesty though, we recommend Phen2Gene because it is faster:
-
-| Tool              | Phen2Gene (API) | Phen2Gene (CLI) | Phenolyzer (ver. 0.2.0, CLI) | AMELIE 2 (API) | GADO (API) | GADO (CLI) |
-|-------------------|-----------------|-----------------|------------------------------|----------------|------------|------------|
-| Median time (s)   | 0.94            | 0.96            | 504.54                       | 519.97         | 1.52       | 5.89       |
-| Minimum time (s)  | 0.17            | 0.51            | 187.97                       | 198.35         | 0.74       | 3.43       |
-| Maximum time (s)  | 2.96            | 1.92            | 1021.54                      | 852.70         | 4.15       | 10.3       |
-
-and more accurate:
-
-![image](https://user-images.githubusercontent.com/6568964/122856907-a1dea980-d2e5-11eb-96a9-d11990d75aeb.png)
-
-Both these tools have web servers that are somewhat awkward to use and really slow.  It is better to use our faster webserver or API, or install locally. We also do not require a list of random genes to run our tool either.  Having a command line tool for Phen2Gene makes it easier to deploy in any clinical setting as well.
+In summary, a number of computational tools such as Phen2Gene, AMELIE and GADO can perform phenotype-driven gene prioritization. Phen2Gene provides webserver or API, or you can install and run locally (which is important to deploy it in batch processing mode), and it does not require a list of random genes to run either.
 
 ### Running PhenCards
 

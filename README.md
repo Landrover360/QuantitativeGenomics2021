@@ -135,7 +135,7 @@ Then, run R code in `Results_Visualization.R` to visualize the results.
 Check variant distribution across chromesomes:
 ```{r}
 #load data
-res <- read.table("proband.annovar.hg19_multianno.txt", fill=T, header=T, sep="\t")
+res <- read.table("proband.annovar.hg19_multianno.txt", fill=T, header=T, sep="\t", na.strings = ".")
 
 #visualize variant frequency
 attach(mtcars)

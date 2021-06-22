@@ -110,15 +110,9 @@ The `proband.annovar.hg19_multianno.txt` file contains annotations for this exom
 
 ### 4. Results visualization
 
-In the `exercise1` folder, run `pwd Results_Visualization.R` to obtain the path location of `Results_Visualization.R` file and copy this path. Open `Results_Visualization.R` in Rstudio by clicking open file, paste the path of to file name and select `Results_Visualization.R`.
+In the `exercise1` folder, run `pwd` to obtain the working directory and copy this path. 
 
-<img src="https://user-images.githubusercontent.com/11565618/122840830-dee87300-d2c8-11eb-9796-997e00daa0b9.JPG">
-
-Click session to setup the work directory to source file location.
-
-<img src="https://user-images.githubusercontent.com/11565618/122842022-8023f900-d2ca-11eb-92ff-aeee031a44d0.JPG">
-
-You will see that RStudio automatically execute the command below to set up the working directory.
+Paste this path to R console or R studio interface to setup the working directory using function `setwd()`. For example:
 
 ```
 > setwd("/cloud/project/genomics_exercise/exercise1")

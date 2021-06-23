@@ -264,7 +264,7 @@ The benefit of running Phen2Gene is if you do not have any idea of a candidate g
 2. You do not have variants, but you have HPO terms and would like to get some candidate genes for your disease that you may want to target sequence, as it is much cheaper than whole-genome or whole-exome sequencing.
 3. If you have clinical notes, you can use tools like EHR-Phenolyzer or Doc2HPO for processing clinical notes into HPO terms using natural language processing (NLP) techniques, then apply scenario 1 or 2 as relevant.
 
-Other tools listed below (ClinPhen, AMELIE, GADO) require a gene list, and Phen2Gene does not require any variant data or prior gene lists to provide high quality candidate genes.  One would most likely use Phen2Gene for obtaining the genetic etiology of an undiagnosed rare disease with no obvious genetic cause.
+Other tools listed below (ClinPhen, AMELIE, etc) require a gene list, and Phen2Gene does not require any variant data or prior gene lists to provide high quality candidate genes.  One would most likely use Phen2Gene for obtaining the genetic etiology of an undiagnosed rare disease with no obvious genetic cause.
 
 
 ### 1. Using Phen2Gene API.

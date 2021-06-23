@@ -268,7 +268,7 @@ Other tools listed below (ClinPhen, AMELIE, GADO) require a gene list, and Phen2
 
 
 ### 1. Using Phen2Gene API.
-1. Go to Terminal, make sure you are in the `exercicse2` directory first, and run `curl -i -H "Accept: application/json" -H "Content-Type: application/json" "https://phen2gene.wglab.org/api?HPO_list=HP:0002459" | tail -n 1 > output.txt`
+1. Go to Terminal, make sure you are in the `exercise2` directory first, and run `curl -i -H "Accept: application/json" -H "Content-Type: application/json" "https://phen2gene.wglab.org/api?HPO_list=HP:0002459" | tail -n 1 > output.txt`
 where you generate JSON output in `output.txt`
 
 2. Go To Console, remember that we should first set `exercise2` as the working directory.

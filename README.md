@@ -14,8 +14,7 @@ Students need to go to [RStudio Cloud](https://rstudio.cloud/) to create your ow
 3. After you input your information, click "Sign up". 
 <img src="https://user-images.githubusercontent.com/16017780/122824633-f0248600-d2ae-11eb-9bd1-a72b8f03383b.png" width="200" height="300">
 
-If you logout after signing up, you can go to [RStudio Cloud](https://rstudio.cloud/) and login with your username and password. After you are added to "QuantitativeGenomics2021", you can go to "QuantitativeGenomics" spaces on the left, and then click "New project" to create your projects for practice as shown below. It will take ~1 minute to deploy and prepare the project for you. 
-![image](https://user-images.githubusercontent.com/16017780/122825757-58279c00-d2b0-11eb-840a-461f8699e1d9.png)
+If you logout after signing up, you can go to [RStudio Cloud](https://rstudio.cloud/) and login with your username and password. After you are added to "QuantitativeGenomics2021", you can click "Annotation_Assignment" to start the exercise. 
 
 By default, you will be in "Console" as shown below where you can run R code.
 ![image](https://user-images.githubusercontent.com/16017780/122825824-6e355c80-d2b0-11eb-8f8e-14af92192188.png)

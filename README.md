@@ -238,6 +238,16 @@ NC_045512v2  29402   29402   G   T   1
 NC_045512v2  29742   29742   G   T   1
 ```
 
+To validate your results, you can use UCSC Genome Browser at http://genome.ucsc.edu/cgi-bin/hgTracks?db=wuhCor1. For example, you can check the region NC_045512v2:22995-22995, and then you will see the figure below:
+
+![image](https://user-images.githubusercontent.com/5926328/123186772-db8aee00-d466-11eb-9081-98ff80693c6e.png)
+
+This shows that the mutation at 22995 target the amino acid T resulting in a threonine-to-lysine substitution. In fact, the location of T478K is within the interaction domain with the human receptor ACE2 (figure taken from [here](https://www.mdpi.com/1999-4915/13/6/1002/pdf):
+
+![image](https://user-images.githubusercontent.com/5926328/123186860-0c6b2300-d467-11eb-8d30-57358d13ebfd.png)
+
+
+
 
 
 

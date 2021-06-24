@@ -200,7 +200,7 @@ Additional exercise: The [B.1.167.2](https://en.wikipedia.org/wiki/SARS-CoV-2_De
 
 The first sequence on B.1.167.2 was sequenced on 3/23/2021 from Australia (identifier "NSW-R0167/2021|EPI_ISL_1315070|2021-03-18"). Note that there are already 66,276 sequences for B.1.167.2 in GISAID database as of June 22, 2021, but this one is the first reported one. We analyzed this sequence and identified a total of 34 mutations listed below. Now please use the procedure learned above, annotate these mutations to see how they affect proteins in SARS-CoV-2.
 
-One thing that becomes immediately clear from your analysis is that B.1.167.2 contains the famous L452R mutation and the [D614G mutation](https://www.nature.com/articles/s41586-020-2895-3). However, it does NOT contain the E484Q mutation. Therefore, the statements made in Wikipedia page is wrong as of June 22, 2021 ("The Delta variant has mutations in the gene encoding the SARS-CoV-2 spike protein[5] causing the substitutions E484Q and L452R.[7]".
+One thing that becomes immediately clear from your analysis is that B.1.167.2 contains the famous [L452R mutation](https://pubmed.ncbi.nlm.nih.gov/33758861/) and the [D614G mutation](https://www.nature.com/articles/s41586-020-2895-3). However, it does NOT contain the E484Q mutation. Therefore, the statements made in Wikipedia page is wrong as of June 22, 2021 ("The Delta variant has mutations in the gene encoding the SARS-CoV-2 spike protein[5] causing the substitutions E484Q and L452R.[7]".
 
 ```
 NC_045512v2  210 210 G   T   1

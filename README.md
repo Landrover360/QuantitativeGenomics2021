@@ -191,9 +191,14 @@ This format is referred to as the avinput format, and it is a simple tab or spac
 
 Then you can just run `perl table_annovar.pl example/ex3.avinput sarscov2db -build NC_045512v2 -protocol avGene -operation g -out ex3` to annotate these mutations and the results will be stored in ex3.NC_045512v2_multianno.txt. 
 
-You can use the Linux command `cat` to show the content of this file, since it is a relatively small file.
+You can use the Linux command `cat ex3.NC_045512v2_multianno.txt` to show the content of this file, since it is a relatively small file.
 
-![image](https://user-images.githubusercontent.com/5926328/122944485-dd10c500-d345-11eb-8cce-4a96dbb61eb3.png)
+```
+Chr     Start   End     Ref     Alt     Func.avGene     Gene.avGene     GeneDetail.avGene       ExonicFunc.avGene       AAChange.avGene
+NC_045512v2     29095   29095   C       T       exonic  N               synonymous SNV  N:YP_009724397.2:exon1:c.C822T:p.F274F
+NC_045512v2     26144   26144   G       T       exonic  ORF3a           nonsynonymous SNV       ORF3a:YP_009724391.1:exon1:c.G752T:p.G251V
+NC_045512v2     28144   28144   T       C       exonic  ORF8            nonsynonymous SNV       ORF8:YP_009724396.1:exon1:c.T251C:p.L84S
+```
 
 Additional exercise: The [B.1.167.2](https://en.wikipedia.org/wiki/SARS-CoV-2_Delta_variant) variant (The WHO named it the Delta variant on 31 May 2021) is a variant of concern, because it showed evidence of higher transmissibility and reduced neutralisation. The variant is thought to be partly responsible for India's second wave of the pandemic beginning in February 2021. As of June 22, 2021, the distribution of delta variant from GISAID is shown below.
 

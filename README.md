@@ -16,6 +16,8 @@ Students need to go to [RStudio Cloud](https://rstudio.cloud/) to create your ow
 
 If you logout after signing up, you can go to [RStudio Cloud](https://rstudio.cloud/) and login with your username and password. After you are added to "QuantitativeGenomics2021", you can click "Annotation_Assignment" to start the exercise. 
 
+![image](https://user-images.githubusercontent.com/11565618/123189098-345c8580-d46b-11eb-8388-0cc641aad9da.png)
+
 By default, you will be in "Console" as shown below where you can run R code.
 ![image](https://user-images.githubusercontent.com/16017780/122825824-6e355c80-d2b0-11eb-8f8e-14af92192188.png)
 

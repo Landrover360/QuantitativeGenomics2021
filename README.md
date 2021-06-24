@@ -139,7 +139,7 @@ At this point, you should see a barplot similar to the one below:
 Check allele frequency distribution between non-synonymous, synonymous and intronic variants:
 ```{r}
 #visualize allele frequency
-par(mar=c(5.1, 4.1, 4.1, 2.1),mfrow=c(3,1))
+par(mar=c(2, 4, 1, 1),mfrow=c(3,1))
 af_syn<-res[res$ExonicFunc.refGeneWithVer=="synonymous SNV",]$AF
 hist(as.numeric(af_syn),  ylab="Frequency", xlab="Allele frequency", main="Synonymous SNV", breaks=seq(0,1,.001))
 
